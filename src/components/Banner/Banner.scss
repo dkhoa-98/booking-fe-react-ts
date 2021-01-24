@@ -1,0 +1,30 @@
+.banner{
+    margin: calc(var(--header-mb) + 1.25rem) 0 1rem 0;
+    padding: var(--pd-header-content-mb);
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    &__img{
+        border-radius: .75rem;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .banner{
+        margin: calc(var(--header-tb) + 1.25rem) 0 1rem 0;
+        padding: var(--pd-header-content-tb);
+        &__img{
+            border-radius: 1rem;
+        }
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .banner{
+        margin: calc(var(--header-tb) + 1.25rem) 0 1rem 0;
+        padding: var(--pd-header-content-dt);
+        &__img{
+            border-radius: 1.5rem;
+        }
+    }
+}
